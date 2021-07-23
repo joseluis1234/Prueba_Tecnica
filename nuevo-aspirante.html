@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Registro</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="container contenido-principal">
+            <div class="row">
+                <div class="d-flex">
+                    <div class="col-md-4 justify-content-center">
+                        <aside class="bg-info aside-principal">
+                            <h1 class="text-uppercase p-2 text-center text-light display-5">Registro de Aspirantes</h1>
+                            <p class="text-light text-center">Administra a los nuevos Aspirantes</p>
+                            <nav>
+                                <a href="index.php" class="d-block text-light px-3 py-1">Aspirantes</a>
+                                <a href="nuevo-aspirante.html" class="d-block text-light px-3 py-1 mt-2">Nuevo Aspirante</a>
+                            </nav>
+                        </aside>
+                        <!--sidebar-->
+                    </div>
+                    <div class="col-md-8 ">
+                        <main class="principal mt-3 formulario-registro">
+                            <h2 class="text-uppercase text-center mt-2">Nuevo Aspirante</h2>
+                            <form action="php/insertarRegistro.php" class="p-5 mt-2 formulario-contacto needs-validation" method="POST" novalidate>
+                                <div class="form-group">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" id="nombre" class="form-control" placeholder="Nombre" name="nombre" required>
+                                    <div class="invalid-feedback">
+                                        'El nombre es obligatorio'
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="paterno">Apellido Paterno</label>
+                                    <input type="text" id="paterno" class="form-control" placeholder="Apellido Paterno" name="paterno" required>
+                                    <div class="invalid-feedback">
+                                        'El apellido es obligatorio'
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="materno">Apellido Materno</label>
+                                    <input type="text" id="materno" class="form-control" placeholder="Apellido Materno" name="materno" required>
+                                    <div class="invalid-feedback">
+                                        'El apellido es obligatorio'
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono">Telefono</label>
+                                    <input type="text" id="telefono" class="form-control" placeholder="Telefono" name="telefono" required>
+                                    <div class="invalid-feedback">
+                                        'El telefono es obligatorio'
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="experiencia">Años de Experiencia</label>
+                                    <select name="experiencia" id="" class="d-block mb-3 form-control">
+                                        <option value="1 año">1 Año</option>
+                                        <option value="2 años">2 Años</option>
+                                        <option value="3 años">3 Años</option>
+                                        <option value="4 años">4 Años</option>
+                                        <option value="5+ años">5+ Años</option>
+                                    </select>
+                                </div>
+                                <input type="submit" value="Agregar Aspirante" class="btn btn-success envio" onclick="redireccion()">
+
+
+                            </form>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/app.js"></script>
+        <script src="js/redireccion.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
